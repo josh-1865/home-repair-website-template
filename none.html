@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battery Product Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+      /* Product Section Styles */
+      .product-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 0;
+        position: relative;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .product-image {
+        flex: 1;
+        text-align: center;
+      }
+
+      .product-image img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 15px;
+      }
+
+      .product-content {
+        flex: 1;
+        padding-left: 40px;
+      }
+
+      .product-content h2 {
+        font-size: 2.5rem;
+        color: #1a1a6e;
+        margin-bottom: 15px;
+      }
+
+      .product-content p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .features {
+        list-style: none;
+        padding: 0;
+      }
+
+      .features li {
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .features li i {
+        color: #ff9800;
+        margin-right: 10px;
+      }
+
+      /* WhatsApp Floating Button */
+      .whatsapp-link {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50%;
+        padding: 15px;
+        font-size: 24px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .whatsapp-link:hover {
+        background-color: #128c7e;
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .product-content {
+          padding-left: 0;
+          margin-top: 20px;
+        }
+
+        .product-image img {
+          max-width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Product Section -->
+    <section class="product-section">
+      <div class="container">
+        <div class="product-image">
+          <img src="img/battery.jpg" alt="Kartel Tall Tubular Battery" />
+        </div>
+        <div class="product-content">
+          <h2>Kartel Tall Tubular Battery</h2>
+          <p>
+            The Kärtel Tall Tubular Battery (220AH/12v) comes with an
+            extra-strong, flexible, oxidation-resistant gauntlet for higher
+            performance and to provide longer life.
+          </p>
+          <ul class="features">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              Faster charging for quick power backup
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              Tough build to withstand tough conditions
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              Longer-lasting backup power
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              Advanced technology for better energy storage
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

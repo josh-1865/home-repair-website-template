@@ -1,0 +1,196 @@
+/* for the about
+/* Style for the experience box */
+.experience-box {
+  width: 200px;
+  height: 200px;
+}
+/* Benefits Section Styles */
+.benefits-section {
+  margin: 30px 0;
+}
+
+.container-p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px; /* Ensures image doesn't stretch too much on large screens */
+  padding: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Keeps the image aspect ratio */
+}
+
+.content-section {
+  flex: 1;
+  background: linear-gradient(to right, #f9fae0, #ffbb1c); /* Yellow gradient background */
+  padding: 40px;
+  width: 100%;
+}
+
+.content-section h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.content-section .highlight {
+  color: #ffffff;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.benefit-item {
+  position: relative;
+  width: 100%;
+  padding-left: 60px; /* Space for the number */
+}
+
+/* Style for the large faded number */
+.benefit-item .number {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.406); /* Lightly faded */
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  z-index: 1; /* Position behind the text */
+}
+
+.benefit-item h5 {
+  font-size: 1.5rem;
+  color: #000000;
+  position: relative;
+  z-index: 2; /* Position above the number */
+  margin-bottom: 10px;
+}
+
+.benefit-item p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2; /* Position above the number */
+}
+
+/* Small screen fix (mobile devices) */
+@media (max-width: 768px) {
+  .container-p {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-section {
+    margin-bottom: 30px;
+    max-width: 100%; /* Ensure image takes full width on small screens */
+    padding: 0;
+  }
+
+  .benefit-item {
+    padding-left: 40px; /* Reduce space for mobile */
+  }
+
+  .benefit-item .number {
+    font-size: 2.5rem;
+    top: -10px;
+  }
+
+  .benefit-item h5 {
+    font-size: 1.3rem;
+  }
+
+  .benefit-item p {
+    font-size: 0.9rem;
+  }
+
+  .content-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .content-section {
+    padding: 20px; /* Reduce padding for mobile */
+  }
+}
+
+/* Medium screen fix (tablets & small desktops) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .container-p {
+    flex-direction: row;
+  }
+
+  .content-section {
+    padding: 30px;
+  }
+
+  .benefit-item {
+    padding-left: 50px;
+  }
+
+  .benefit-item .number {
+    font-size: 3rem;
+    top: -15px;
+  }
+
+  .benefit-item h5 {
+    font-size: 1.4rem;
+  }
+
+  .benefit-item p {
+    font-size: 1rem;
+  }
+
+  .content-section h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large screen fix (desktop and larger) */
+@media (min-width: 1200px) {
+  .container-p {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content-section {
+    padding: 60px; /* Add more padding for larger screens */
+  }
+
+  .benefit-item {
+    padding-left: 80px; /* Increase the left padding for larger screens */
+  }
+
+  .benefit-item .number {
+    font-size: 4.5rem; /* Increase the font size of the number */
+    top: -30px; /* Adjust the position */
+    left: -20px;
+  }
+
+  .benefit-item h5 {
+    font-size: 2rem; /* Increase the heading size */
+    margin-bottom: 15px;
+  }
+
+  .benefit-item p {
+    font-size: 1.2rem; /* Increase the paragraph font size */
+  }
+
+  .content-section h3 {
+    font-size: 2.5rem; /* Increase the section title font size */
+  }
+
+  .content-section p {
+    font-size: 1.3rem; /* Increase the description font size */
+  }
+}
